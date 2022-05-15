@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf ./dist ./.next",
     "dev": "next dev",
-    "build": "next build && next export -o dist",
+    "build": "next build",
     "serve": "npm run dev",
     "start": "next start",
     "lint": "next lint",
