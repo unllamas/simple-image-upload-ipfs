@@ -1,8 +1,13 @@
 import { useState, useEffect } from 'react';
-import { useAppContext } from '../../context';
+import { useRouter } from 'next/router';
 import toBuffer from 'it-to-buffer';
 
-const CID = ({ cid }) => {
+import { useAppContext } from '../../context';
+
+const CID = () => {
+  const router = useRouter();
+  const { cid } = router.query;
+
   const [image, setImage] = useState('');
   const { ipfs } = useAppContext();
 
@@ -29,14 +34,5 @@ const CID = ({ cid }) => {
     </>
   );
 };
-
-export async function getServerSideProps({ query }) {
-  const { cid } = query;
-  return {
-    props: {
-      cid,
-    },
-  };
-}
 
 export default CID;
