@@ -1,7 +1,5 @@
 # simple-image-upload-ipfs
 
-> This readme is only for example purposes
-
 ## Tech Stack
 * [Yarn](https://yarnpkg.com/) for package management
 * [NextJS](https://nextjs.org/) for mobile app
