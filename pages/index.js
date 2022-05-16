@@ -54,7 +54,7 @@ export default function Home() {
           </div>
         ) : (
           <div className='section'>
-            <div className='box-preview'>
+            <div className='box-preview' style={{ opacity: path ? '.4' : '1' }}>
               <div className='header' style={{ backgroundImage: `url('${filePreview}')` }}></div>
               <div className='body'>
                 <span>{file.type}</span>
