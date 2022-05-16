@@ -64,7 +64,9 @@ export default function Home() {
             <div className='button-group'>
               {path ? (
                 <Link href={`/cid/${path}`}>
-                  <a className='button primary'>See image</a>
+                  <a className='button primary' target='_blank'>
+                    See image
+                  </a>
                 </Link>
               ) : (
                 <button className='button' onClick={() => handleUpload()} disabled={loading}>
