@@ -41,7 +41,9 @@ export function AppWrapper({ children }) {
           <h2>Initializing node...</h2>
           <p>As we do not depend on a server, your device is responsible for storing all this information</p>
           <Link href='https://twitter.com/unllamas'>
-            <a className='button primary'>Learn more</a>
+            <a className='button primary' target='_blank'>
+              Learn more
+            </a>
           </Link>
         </div>
       </>

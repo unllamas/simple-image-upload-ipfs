@@ -83,7 +83,9 @@ export default function Home() {
         <p>
           Created with 🖤 by{' '}
           <Link href='https://twitter.com/unllamas'>
-            <a className='link'>@unllamas</a>
+            <a className='link' target='_blank'>
+              @unllamas
+            </a>
           </Link>
         </p>
       </footer>
