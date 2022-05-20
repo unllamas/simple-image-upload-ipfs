@@ -208,3 +208,19 @@ footer {
   color: #A9B1BC;
   font-size: .6rem;
 }
+
+/* CID */
+.box-move {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle-button {
+  height:65px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
