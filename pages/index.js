@@ -63,7 +63,7 @@ export default function Home() {
             </div>
             <div className='button-group'>
               {path ? (
-                <Link href={`/cid/${path}`} replace>
+                <Link href={`/ipfs/${path}`} replace>
                   <a className='button primary'>See image</a>
                 </Link>
               ) : (
