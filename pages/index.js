@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { useAppContext } from '../context';
 
 export default function Home() {
+  // Remove from here
+  document.querySelector('body').style.backgroundColor = '#FDFDFD';
+
   const { ipfs } = useAppContext();
   const [file, setFile] = useState();
   const [path, setPath] = useState('');

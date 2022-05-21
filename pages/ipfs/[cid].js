@@ -6,6 +6,9 @@ import toBuffer from 'it-to-buffer';
 import { useAppContext } from '../../context';
 
 const CID = () => {
+  // Remove from here
+  document.querySelector('body').style.backgroundColor = '#0e0e0e';
+
   const router = useRouter();
   const { cid } = router.query;
 
@@ -30,7 +33,7 @@ const CID = () => {
   if (!image) return null;
 
   return (
-    <>
+    <div className='page-cid'>
       <div className='box-move'>
         <Link href={`/`} replace>
           <a className='circle-button'>
@@ -43,8 +46,8 @@ const CID = () => {
           </a>
         </Link>
       </div>
-      <img src={image} width='100%' />
-    </>
+      <img src={image} />
+    </div>
   );
 };
 
