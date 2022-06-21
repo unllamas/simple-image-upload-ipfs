@@ -19,7 +19,16 @@ export function AppWrapper({ children }) {
     const init = async () => {
       if (ipfs) return;
 
+      const ipfsNodeLocal = localStorage.getItem('ipfsNode') || null;
+      if (ipfsNodeLocal) {
+        setIpfs(ipfsNodeLocal);
+        return;
+      }
+
       const node = await create();
+      if (node) {
+        localStorage.setItem('ipfsNode', node);
+      }
 
       const nodeId = await node.id();
       const nodeVersion = await node.version();
